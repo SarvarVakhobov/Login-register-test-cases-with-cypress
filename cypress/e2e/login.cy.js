@@ -31,7 +31,7 @@ describe('Login test', () => {
     cy.wait(2000)
     cy.get('alert > nz-alert').should('not.exist')
   })
-  it.only('Register button', () => {
+  it('Register button', () => {
     cy.get(`[class="m-0 ng-tns-c173-2"]`).should('not.exist')
     cy.get(`[class="mt-4 text-center ng-tns-c172-0"] span`).should('contain.text', 'Зарегистрироваться')
     cy.get(`[class="mt-4 text-center ng-tns-c172-0"] a span`).click()
